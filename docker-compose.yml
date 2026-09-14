@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  facilityops:
+    build: .
+    container_name: facilityops-platform
+    ports:
+      - "8003:8003"
+    environment:
+      - PORT=8003
+      - ENVIRONMENT=production
+    restart: unless-stopped
