@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FacilityOps AI Platform // Autonomous Building Operating System</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏢</text></svg>">
+</head>
+<body>
+
+  <!-- Top Global Header & Incident Injection Toolbar Container -->
+  <div id="header-container"></div>
+
+  <!-- Primary FacilityOps Tab Navigation -->
+  <nav class="nav-tabs">
+    <div class="nav-tab active" data-tab="command_center" onclick="App.switchTab('command_center')">
+      🏢 Command Center
+    </div>
+    <div class="nav-tab" data-tab="energy" onclick="App.switchTab('energy')">
+      ⚡ Energy Intelligence
+    </div>
+    <div class="nav-tab" data-tab="maintenance" onclick="App.switchTab('maintenance')">
+      🔧 Predictive Maintenance
+    </div>
+    <div class="nav-tab" data-tab="occupancy" onclick="App.switchTab('occupancy')">
+      👥 Occupancy Intelligence
+    </div>
+    <div class="nav-tab" data-tab="security" onclick="App.switchTab('security')">
+      🛡️ Security Intelligence
+    </div>
+    <div class="nav-tab" data-tab="cross_agent" onclick="App.switchTab('cross_agent')">
+      🔗 Cross-Agent Engine
+    </div>
+    <div class="nav-tab" data-tab="cost" onclick="App.switchTab('cost')">
+      💰 Cost & ESG
+    </div>
+    <div class="nav-tab" data-tab="insights" onclick="App.switchTab('insights')">
+      🧠 AI Insight Center
+    </div>
+    <div class="nav-tab" data-tab="alerts" onclick="App.switchTab('alerts')">
+      🚨 Central Alerts
+    </div>
+    <div class="nav-tab" data-tab="reports" onclick="App.switchTab('reports')">
+      📄 Reporting Engine
+    </div>
+  </nav>
+
+  <!-- Main View Container -->
+  <main id="main-content-view" style="padding: 20px; max-width: 1600px; margin: 0 auto;"></main>
+
+  <!-- Application Logic & Modular Components -->
+  <script src="/static/js/api.js"></script>
+  <script src="/static/js/store.js"></script>
+  <script src="/static/js/floorplan.js"></script>
+  
+  <script src="/static/js/components/header.js"></script>
+  <script src="/static/js/components/executive.js"></script>
+  <script src="/static/js/components/energy.js"></script>
+  <script src="/static/js/components/maintenance.js"></script>
+  <script src="/static/js/components/occupancy.js"></script>
+  <script src="/static/js/components/security.js"></script>
+  <script src="/static/js/components/cross_agent.js"></script>
+  <script src="/static/js/components/cost.js"></script>
+  <script src="/static/js/components/insights.js"></script>
+  <script src="/static/js/components/alerts.js"></script>
+  <script src="/static/js/components/reports.js"></script>
+  
+  <script src="/static/js/app.js"></script>
+
+</body>
+</html>
