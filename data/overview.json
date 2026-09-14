@@ -1,0 +1,48 @@
+{
+  "timestamp": "2026-09-14 15:43:27",
+  "simulation_time": "15:43:27",
+  "building_name": "Apex Tower Global HQ",
+  "facility_health_score": 91.5,
+  "sub_scores": {
+    "energy": 88.5,
+    "maintenance": 91.2,
+    "occupancy": 84.5,
+    "security": 96.0,
+    "cost": 86.4,
+    "sustainability": 91.0
+  },
+  "total_power_kw": 1240.0,
+  "peak_demand_kw": 1480.0,
+  "daily_energy_kwh": 16840.0,
+  "total_water_gpm": 34.5,
+  "daily_water_gal": 18450.0,
+  "daily_carbon_kg": 6483.4,
+  "daily_operating_cost": 6211.5,
+  "current_occupancy": 582,
+  "occupancy_rate": 35.7,
+  "total_assets": 39,
+  "healthy_assets": 39,
+  "good_assets": 0,
+  "warning_assets": 0,
+  "critical_assets": 0,
+  "active_alerts_count": 0,
+  "active_security_events_count": 1,
+  "open_work_orders_count": 3,
+  "prevented_failures_count": 14,
+  "estimated_monthly_savings_usd": 26960.0,
+  "energy_distribution": {
+    "HVAC & Cooling": 680.0,
+    "Lighting & Fa\u00e7ade": 230.0,
+    "Data Center & IT Loads": 214.5,
+    "Pumps & Hydronic Auxiliaries": 66.0,
+    "Plug Loads & Other Utilities": 49.5
+  },
+  "cost_distribution": {
+    "Energy & Electricity": 2780.0,
+    "Predictive & Planned Maintenance": 620.0,
+    "Municipal Water & Utilities": 101.5,
+    "Facility Operations & Staffing": 1450.0,
+    "Capital Asset Depreciation": 940.0,
+    "Consumables & Other": 320.0
+  }
+}

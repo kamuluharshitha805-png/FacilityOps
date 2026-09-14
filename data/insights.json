@@ -1,0 +1,138 @@
+[
+  {
+    "id": "INS-AGT-6587",
+    "title": "Chiller 2 Compressor Drive-End Bearing Friction Warning",
+    "agent_source": "Predictive Maintenance Agent",
+    "category": "Mechanical Degradation",
+    "insight": "Centrifugal Chiller 2 (CH-02) drive-end bearing vibration RMS has trended upward from 1.4 mm/s to 3.8 mm/s over 72 hours, with temperature reaching 59.5\u00b0C.",
+    "why": "Fast Fourier Transform (FFT) vibration telemetry indicates peak amplitude at ball-pass inner ring frequency (BPFI), indicating raceway spalling.",
+    "risk": "Unmitigated operation will lead to catastrophic shaft seizure, unexpected chiller trip during peak heat hours, and emergency replacement costs exceeding $65,000.",
+    "recommendation": "Schedule ultrasonic grease injection and vibration spectrum re-scan within 48 hours; stage Chiller 3 (CH-03) to take base load.",
+    "impact": "Extends bearing life by ~6,000 run hours, prevents unexpected HVAC shutdown, and preserves $18,400 in emergency repair and business disruption costs.",
+    "priority": "Critical",
+    "estimated_savings_usd": 18400.0,
+    "action_label": "Dispatch Mechanical Overhaul",
+    "action_type": "dispatch_maint",
+    "action_params": {
+      "asset_id": "CH-02",
+      "task": "Bearing greasing & spectrum analysis"
+    },
+    "timestamp": "2026-09-14 15:43:26",
+    "is_executed": false,
+    "executed_at": null
+  },
+  {
+    "id": "INS-AGT-6587",
+    "title": "Off-Peak Pre-Cooling & Chiller Staging Opportunity",
+    "agent_source": "Energy Intelligence Agent",
+    "category": "Demand Shaving",
+    "insight": "Upcoming weather and occupancy models predict afternoon temperature reaching 31\u00b0C with 88% building occupancy between 13:00 - 16:00.",
+    "why": "Grid tariff jumps to peak demand pricing ($0.245/kWh + $18/kW demand charge) from 12:00 to 18:00.",
+    "risk": "Unmanaged chiller ramp will trigger a new monthly peak demand penalty of ~1,680 kW, incurring $5,400 in demand charges.",
+    "recommendation": "Pre-cool thermal mass of Floors 2-4 by 1.2\u00b0C between 06:30 - 08:30 during low-cost tariff ($0.098/kWh), then ramp down Chiller 2 during peak hours.",
+    "impact": "Avoids 140 kW of peak demand spike and trims $3,200 in monthly electric utility charges.",
+    "priority": "High",
+    "estimated_savings_usd": 3200.0,
+    "action_label": "Activate Pre-Cooling Strategy",
+    "action_type": "peak_shave",
+    "action_params": {
+      "pre_cool_delta": 1.2,
+      "peak_limit_kw": 1450.0
+    },
+    "timestamp": "2026-09-14 15:43:26",
+    "is_executed": false,
+    "executed_at": null
+  },
+  {
+    "id": "INS-AGT-6587",
+    "title": "Biometric Mantrap Loitering Pattern",
+    "agent_source": "Security Intelligence Agent",
+    "category": "Perimeter Security",
+    "insight": "Visitor badge BDG-7422 registered a clearance denial at Mission Data Center mantrap, followed by 140 seconds of unauthorized dwell time detected by AI camera CAM-F5-01-PTZ.",
+    "why": "Guest attempted access outside authorized visitor envelope (Floor 1 & 3 public areas only).",
+    "risk": "Potential physical reconnaissance or social engineering tailgating opportunity into tier-4 data center.",
+    "recommendation": "Dispatch roaming security patrol to Floor 5 corridor to escort visitor back to designated Floor 1 lobby.",
+    "impact": "Eliminates breach vector into mission-critical infrastructure and enforces ISO 27001 physical security compliance.",
+    "priority": "High",
+    "estimated_savings_usd": 0.0,
+    "action_label": "Dispatch Security Patrol",
+    "action_type": "security_alert",
+    "action_params": {
+      "camera_id": "CAM-F5-01-PTZ",
+      "zone_id": "Z-F5-01"
+    },
+    "timestamp": "2026-09-14 15:43:26",
+    "is_executed": false,
+    "executed_at": null
+  },
+  {
+    "id": "INS-AGT-6587",
+    "title": "HVAC Static Pressure Setback Optimization",
+    "agent_source": "Energy Intelligence Agent",
+    "category": "HVAC Optimization",
+    "insight": "AHU-F3-01 and AHU-F3-02 supply duct static pressure is operating at 1.8 in. w.g. despite variable-air volume boxes averaging only 42% open.",
+    "why": "Static pressure reset schedule in BMS has a fixed minimum floor rather than dynamic trim-and-respond logic.",
+    "risk": "Excess fan motor kilowatt draw increases thermal heat gain in ductwork, wasting 28 kWh/day and generating $860/mo unnecessary utility cost.",
+    "recommendation": "Enable Trim-and-Respond dynamic static pressure setback logic to lower duct setpoint from 1.8 to 1.3 in. w.g.",
+    "impact": "Reduces fan energy consumption by 24%, saving ~$860/month with zero disruption to thermal comfort.",
+    "priority": "Medium",
+    "estimated_savings_usd": 860.0,
+    "action_label": "Apply Dynamic Pressure Reset",
+    "action_type": "hvac_setpoint",
+    "action_params": {
+      "ahu_ids": [
+        "AHU-F3-01",
+        "AHU-F3-02"
+      ],
+      "target_pressure": 1.3
+    },
+    "timestamp": "2026-09-14 15:43:26",
+    "is_executed": false,
+    "executed_at": null
+  },
+  {
+    "id": "INS-AGT-6587",
+    "title": "Floor 4 Conference & Briefing Room Underutilization",
+    "agent_source": "Occupancy Intelligence Agent",
+    "category": "Space Utilization",
+    "insight": "Global Strategy Briefing Room (Z-F4-03) has averaged only 8.5% weekly occupancy despite 6,000 sq ft dedicated footprint and continuous climate conditioning.",
+    "why": "Calendar bookings show 78% cancellation rate and shift to hybrid remote video meetings.",
+    "risk": "Unneeded lighting and dedicated HVAC continuous runtime costs $1,450/month in wasted operational energy.",
+    "recommendation": "Convert Z-F4-03 to an on-demand occupancy-triggered zone with automated setback mode when unbooked.",
+    "impact": "Reduces dedicated conditioning load by 65%, saving ~$1,450/month and reclaiming space for flexible agile pods.",
+    "priority": "Medium",
+    "estimated_savings_usd": 1450.0,
+    "action_label": "Implement On-Demand Zone Setback",
+    "action_type": "schedule_adjust",
+    "action_params": {
+      "zone_id": "Z-F4-03",
+      "setback_mode": "occupancy_triggered"
+    },
+    "timestamp": "2026-09-14 15:43:26",
+    "is_executed": false,
+    "executed_at": null
+  },
+  {
+    "id": "INS-AGT-6587",
+    "title": "Transformer Redundancy Load-Balancing & Losses",
+    "agent_source": "Cost Optimization Agent",
+    "category": "Energy Cost",
+    "insight": "Main Step-Down Transformer XFMR-01 is operating at 82% rated capacity while redundant unit XFMR-02 operates at only 12% no-load standby.",
+    "why": "Unbalanced loading increases I\u00b2R copper core winding losses exponentially on XFMR-01 ($410/mo wasted heat dissipation).",
+    "risk": "Accelerates insulation thermal degradation, reducing transformer remaining life by an estimated 4.5 years.",
+    "recommendation": "Auto-transfer 35% of secondary feeder breakers to XFMR-02 to balance loads at 47% each, running at peak transformer efficiency curve.",
+    "impact": "Reduces parasitic electrical heat loss by 18,500 kWh/year, yielding $3,050/yr direct electricity cost savings.",
+    "priority": "Low",
+    "estimated_savings_usd": 3050.0,
+    "action_label": "Balance Transformer Feeder Load",
+    "action_type": "dispatch_maint",
+    "action_params": {
+      "source_xfmr": "XFMR-01",
+      "target_xfmr": "XFMR-02",
+      "transfer_pct": 35
+    },
+    "timestamp": "2026-09-14 15:43:26",
+    "is_executed": false,
+    "executed_at": null
+  }
+]

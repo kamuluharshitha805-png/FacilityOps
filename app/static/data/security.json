@@ -1,0 +1,125 @@
+{
+  "kpis": {
+    "access_events_today": 3840,
+    "active_security_events": 1,
+    "critical_incidents_count": 0,
+    "restricted_zone_events_today": 142,
+    "security_health_score": 96.0,
+    "zone_activity": {
+      "public_zones": 3,
+      "operational_zones": 6,
+      "restricted_zones": 10,
+      "high_security_zones": 5
+    },
+    "recent_access_logs": [
+      {
+        "id": "ACC-8910",
+        "timestamp": "15:41:26",
+        "badge_id": "BDG-5520",
+        "user": "Dr. Elena Rostova",
+        "department": "Quantum R&D",
+        "zone_id": "Z-F2-01",
+        "zone_name": "Hardware R&D Lab Alpha",
+        "security_tier": "Restricted",
+        "status": "Granted",
+        "portal": "Card Reader F2-North"
+      },
+      {
+        "id": "ACC-8909",
+        "timestamp": "15:38:26",
+        "badge_id": "BDG-2041",
+        "user": "Marcus Brody",
+        "department": "Facility Engineering",
+        "zone_id": "Z-F5-03",
+        "zone_name": "Chiller Plant Penthouse",
+        "security_tier": "Restricted",
+        "status": "Granted",
+        "portal": "Penthouse Turnstile S"
+      },
+      {
+        "id": "ACC-8908",
+        "timestamp": "15:35:26",
+        "badge_id": "BDG-9902",
+        "user": "Contractor - Fire Inspection",
+        "department": "External Services",
+        "zone_id": "Z-F1-01",
+        "zone_name": "Main Atrium",
+        "security_tier": "Public",
+        "status": "Granted",
+        "portal": "Speed Gate 3"
+      },
+      {
+        "id": "ACC-8907",
+        "timestamp": "15:29:26",
+        "badge_id": "BDG-7422",
+        "user": "Unknown Guest 09",
+        "department": "Visitor",
+        "zone_id": "Z-F5-01",
+        "zone_name": "Mission Critical Data Center",
+        "security_tier": "High-Security",
+        "status": "Denied",
+        "portal": "Mantrap Ingress 1",
+        "reason": "Insufficient Security Clearance Level 4"
+      }
+    ],
+    "cctv_events": [
+      {
+        "id": "CCTV-EV-101",
+        "timestamp": "15:29:26",
+        "camera_id": "CAM-F5-01-PTZ",
+        "location": "Floor 5 Data Center Mantrap",
+        "event_type": "Access Denied Loitering",
+        "severity": "Medium",
+        "confidence": 0.94,
+        "description": "Individual remained at high-security biometric portal for >120s following access denial.",
+        "action_taken": "Audio advisory issued via two-way intercom."
+      },
+      {
+        "id": "CCTV-EV-102",
+        "timestamp": "15:11:26",
+        "camera_id": "CAM-F1-03-DOCK",
+        "location": "Loading Dock Delivery Bay 2",
+        "event_type": "Vehicle Arrival Verified",
+        "severity": "Information",
+        "confidence": 0.98,
+        "description": "Authorized logistics carrier plate verified against manifest.",
+        "action_taken": "Automated bay roller door opened."
+      },
+      {
+        "id": "CCTV-EV-103",
+        "timestamp": "14:48:26",
+        "camera_id": "CAM-F2-03-CLEAN",
+        "location": "Prototype Clean Room Airlock",
+        "event_type": "PPE Compliance Verification",
+        "severity": "Low",
+        "confidence": 0.99,
+        "description": "All personnel entering airlock detected with required ESD suit and hairnet.",
+        "action_taken": "Logged compliance."
+      }
+    ]
+  },
+  "insights": [
+    {
+      "id": "INS-AGT-6587",
+      "title": "Biometric Mantrap Loitering Pattern",
+      "agent_source": "Security Intelligence Agent",
+      "category": "Perimeter Security",
+      "insight": "Visitor badge BDG-7422 registered a clearance denial at Mission Data Center mantrap, followed by 140 seconds of unauthorized dwell time detected by AI camera CAM-F5-01-PTZ.",
+      "why": "Guest attempted access outside authorized visitor envelope (Floor 1 & 3 public areas only).",
+      "risk": "Potential physical reconnaissance or social engineering tailgating opportunity into tier-4 data center.",
+      "recommendation": "Dispatch roaming security patrol to Floor 5 corridor to escort visitor back to designated Floor 1 lobby.",
+      "impact": "Eliminates breach vector into mission-critical infrastructure and enforces ISO 27001 physical security compliance.",
+      "priority": "High",
+      "estimated_savings_usd": 0.0,
+      "action_label": "Dispatch Security Patrol",
+      "action_type": "security_alert",
+      "action_params": {
+        "camera_id": "CAM-F5-01-PTZ",
+        "zone_id": "Z-F5-01"
+      },
+      "timestamp": "2026-09-14 15:43:26",
+      "is_executed": false,
+      "executed_at": null
+    }
+  ]
+}

@@ -1,0 +1,339 @@
+{
+  "kpis": {
+    "total_power_kw": 1240.0,
+    "peak_demand_kw": 1480.0,
+    "daily_energy_kwh": 16840.0,
+    "daily_carbon_kg": 6483.4,
+    "water_flow_gpm": 34.5,
+    "daily_water_gal": 18450.0,
+    "energy_efficiency_score": 88.5,
+    "hvac_energy_kw": 680.0,
+    "potential_savings_usd": 4250.0,
+    "realized_savings_usd": 1820.0,
+    "energy_distribution": {
+      "HVAC & Cooling": 680.0,
+      "Lighting & Fa\u00e7ade": 230.0,
+      "Data Center & IT Loads": 214.5,
+      "Pumps & Hydronic Auxiliaries": 66.0,
+      "Plug Loads & Other Utilities": 49.5
+    }
+  },
+  "hourly_history": [
+    {
+      "time": "14:00",
+      "total_kw": 1206.2,
+      "hvac_kw": 627.2,
+      "lighting_kw": 265.4,
+      "equipment_kw": 313.6,
+      "water_gpm": 39.3,
+      "carbon_kg": 464.4
+    },
+    {
+      "time": "15:00",
+      "total_kw": 1095.0,
+      "hvac_kw": 569.4,
+      "lighting_kw": 240.9,
+      "equipment_kw": 284.7,
+      "water_gpm": 32.6,
+      "carbon_kg": 421.6
+    },
+    {
+      "time": "16:00",
+      "total_kw": 950.0,
+      "hvac_kw": 494.0,
+      "lighting_kw": 209.0,
+      "equipment_kw": 247.0,
+      "water_gpm": 24.3,
+      "carbon_kg": 365.8
+    },
+    {
+      "time": "17:00",
+      "total_kw": 781.2,
+      "hvac_kw": 406.2,
+      "lighting_kw": 171.9,
+      "equipment_kw": 203.1,
+      "water_gpm": 15.0,
+      "carbon_kg": 300.8
+    },
+    {
+      "time": "18:00",
+      "total_kw": 600.0,
+      "hvac_kw": 312.0,
+      "lighting_kw": 132.0,
+      "equipment_kw": 156.0,
+      "water_gpm": 5.7,
+      "carbon_kg": 231.0
+    },
+    {
+      "time": "19:00",
+      "total_kw": 418.8,
+      "hvac_kw": 217.8,
+      "lighting_kw": 92.1,
+      "equipment_kw": 108.9,
+      "water_gpm": -2.6,
+      "carbon_kg": 161.2
+    },
+    {
+      "time": "20:00",
+      "total_kw": 250.0,
+      "hvac_kw": 130.0,
+      "lighting_kw": 55.0,
+      "equipment_kw": 65.0,
+      "water_gpm": 5.6,
+      "carbon_kg": 96.2
+    },
+    {
+      "time": "21:00",
+      "total_kw": 566.4,
+      "hvac_kw": 294.5,
+      "lighting_kw": 124.6,
+      "equipment_kw": 147.3,
+      "water_gpm": 6.2,
+      "carbon_kg": 218.1
+    },
+    {
+      "time": "22:00",
+      "total_kw": 529.4,
+      "hvac_kw": 275.3,
+      "lighting_kw": 116.5,
+      "equipment_kw": 137.6,
+      "water_gpm": 7.6,
+      "carbon_kg": 203.8
+    },
+    {
+      "time": "23:00",
+      "total_kw": 535.5,
+      "hvac_kw": 278.5,
+      "lighting_kw": 117.8,
+      "equipment_kw": 139.2,
+      "water_gpm": 7.4,
+      "carbon_kg": 206.2
+    },
+    {
+      "time": "00:00",
+      "total_kw": 531.6,
+      "hvac_kw": 276.4,
+      "lighting_kw": 116.9,
+      "equipment_kw": 138.2,
+      "water_gpm": 5.7,
+      "carbon_kg": 204.7
+    },
+    {
+      "time": "01:00",
+      "total_kw": 530.7,
+      "hvac_kw": 276.0,
+      "lighting_kw": 116.8,
+      "equipment_kw": 138.0,
+      "water_gpm": 6.6,
+      "carbon_kg": 204.3
+    },
+    {
+      "time": "02:00",
+      "total_kw": 551.4,
+      "hvac_kw": 286.8,
+      "lighting_kw": 121.3,
+      "equipment_kw": 143.4,
+      "water_gpm": 6.1,
+      "carbon_kg": 212.3
+    },
+    {
+      "time": "03:00",
+      "total_kw": 562.8,
+      "hvac_kw": 292.6,
+      "lighting_kw": 123.8,
+      "equipment_kw": 146.3,
+      "water_gpm": 6.8,
+      "carbon_kg": 216.7
+    },
+    {
+      "time": "04:00",
+      "total_kw": 562.3,
+      "hvac_kw": 292.4,
+      "lighting_kw": 123.7,
+      "equipment_kw": 146.2,
+      "water_gpm": 6.3,
+      "carbon_kg": 216.5
+    },
+    {
+      "time": "05:00",
+      "total_kw": 541.3,
+      "hvac_kw": 281.5,
+      "lighting_kw": 119.1,
+      "equipment_kw": 140.7,
+      "water_gpm": 5.8,
+      "carbon_kg": 208.4
+    },
+    {
+      "time": "06:00",
+      "total_kw": 600.0,
+      "hvac_kw": 312.0,
+      "lighting_kw": 132.0,
+      "equipment_kw": 156.0,
+      "water_gpm": 7.3,
+      "carbon_kg": 231.0
+    },
+    {
+      "time": "07:00",
+      "total_kw": 781.2,
+      "hvac_kw": 406.2,
+      "lighting_kw": 171.9,
+      "equipment_kw": 203.1,
+      "water_gpm": 15.0,
+      "carbon_kg": 300.8
+    },
+    {
+      "time": "08:00",
+      "total_kw": 950.0,
+      "hvac_kw": 494.0,
+      "lighting_kw": 209.0,
+      "equipment_kw": 247.0,
+      "water_gpm": 24.3,
+      "carbon_kg": 365.8
+    },
+    {
+      "time": "09:00",
+      "total_kw": 1095.0,
+      "hvac_kw": 569.4,
+      "lighting_kw": 240.9,
+      "equipment_kw": 284.7,
+      "water_gpm": 32.6,
+      "carbon_kg": 421.6
+    },
+    {
+      "time": "10:00",
+      "total_kw": 1206.2,
+      "hvac_kw": 627.2,
+      "lighting_kw": 265.4,
+      "equipment_kw": 313.6,
+      "water_gpm": 39.3,
+      "carbon_kg": 464.4
+    },
+    {
+      "time": "11:00",
+      "total_kw": 1276.1,
+      "hvac_kw": 663.6,
+      "lighting_kw": 280.8,
+      "equipment_kw": 331.8,
+      "water_gpm": 43.5,
+      "carbon_kg": 491.3
+    },
+    {
+      "time": "12:00",
+      "total_kw": 1300.0,
+      "hvac_kw": 676.0,
+      "lighting_kw": 286.0,
+      "equipment_kw": 338.0,
+      "water_gpm": 45.0,
+      "carbon_kg": 500.5
+    },
+    {
+      "time": "13:00",
+      "total_kw": 1276.1,
+      "hvac_kw": 663.6,
+      "lighting_kw": 280.8,
+      "equipment_kw": 331.8,
+      "water_gpm": 43.5,
+      "carbon_kg": 491.3
+    }
+  ],
+  "daily_history": [
+    {
+      "day": "Mon",
+      "kwh": 24500.0,
+      "cost_usd": 4042.5,
+      "carbon_kg": 9432.5,
+      "water_gal": 22000.0
+    },
+    {
+      "day": "Tue",
+      "kwh": 24500.0,
+      "cost_usd": 4042.5,
+      "carbon_kg": 9432.5,
+      "water_gal": 22000.0
+    },
+    {
+      "day": "Wed",
+      "kwh": 24500.0,
+      "cost_usd": 4042.5,
+      "carbon_kg": 9432.5,
+      "water_gal": 22000.0
+    },
+    {
+      "day": "Thu",
+      "kwh": 24500.0,
+      "cost_usd": 4042.5,
+      "carbon_kg": 9432.5,
+      "water_gal": 22000.0
+    },
+    {
+      "day": "Fri",
+      "kwh": 24500.0,
+      "cost_usd": 4042.5,
+      "carbon_kg": 9432.5,
+      "water_gal": 22000.0
+    },
+    {
+      "day": "Sat",
+      "kwh": 11200.0,
+      "cost_usd": 1848.0,
+      "carbon_kg": 4312.0,
+      "water_gal": 7500.0
+    },
+    {
+      "day": "Sun",
+      "kwh": 11200.0,
+      "cost_usd": 1848.0,
+      "carbon_kg": 4312.0,
+      "water_gal": 7500.0
+    }
+  ],
+  "insights": [
+    {
+      "id": "INS-AGT-6587",
+      "title": "Off-Peak Pre-Cooling & Chiller Staging Opportunity",
+      "agent_source": "Energy Intelligence Agent",
+      "category": "Demand Shaving",
+      "insight": "Upcoming weather and occupancy models predict afternoon temperature reaching 31\u00b0C with 88% building occupancy between 13:00 - 16:00.",
+      "why": "Grid tariff jumps to peak demand pricing ($0.245/kWh + $18/kW demand charge) from 12:00 to 18:00.",
+      "risk": "Unmanaged chiller ramp will trigger a new monthly peak demand penalty of ~1,680 kW, incurring $5,400 in demand charges.",
+      "recommendation": "Pre-cool thermal mass of Floors 2-4 by 1.2\u00b0C between 06:30 - 08:30 during low-cost tariff ($0.098/kWh), then ramp down Chiller 2 during peak hours.",
+      "impact": "Avoids 140 kW of peak demand spike and trims $3,200 in monthly electric utility charges.",
+      "priority": "High",
+      "estimated_savings_usd": 3200.0,
+      "action_label": "Activate Pre-Cooling Strategy",
+      "action_type": "peak_shave",
+      "action_params": {
+        "pre_cool_delta": 1.2,
+        "peak_limit_kw": 1450.0
+      },
+      "timestamp": "2026-09-14 15:43:26",
+      "is_executed": false,
+      "executed_at": null
+    },
+    {
+      "id": "INS-AGT-6587",
+      "title": "HVAC Static Pressure Setback Optimization",
+      "agent_source": "Energy Intelligence Agent",
+      "category": "HVAC Optimization",
+      "insight": "AHU-F3-01 and AHU-F3-02 supply duct static pressure is operating at 1.8 in. w.g. despite variable-air volume boxes averaging only 42% open.",
+      "why": "Static pressure reset schedule in BMS has a fixed minimum floor rather than dynamic trim-and-respond logic.",
+      "risk": "Excess fan motor kilowatt draw increases thermal heat gain in ductwork, wasting 28 kWh/day and generating $860/mo unnecessary utility cost.",
+      "recommendation": "Enable Trim-and-Respond dynamic static pressure setback logic to lower duct setpoint from 1.8 to 1.3 in. w.g.",
+      "impact": "Reduces fan energy consumption by 24%, saving ~$860/month with zero disruption to thermal comfort.",
+      "priority": "Medium",
+      "estimated_savings_usd": 860.0,
+      "action_label": "Apply Dynamic Pressure Reset",
+      "action_type": "hvac_setpoint",
+      "action_params": {
+        "ahu_ids": [
+          "AHU-F3-01",
+          "AHU-F3-02"
+        ],
+        "target_pressure": 1.3
+      },
+      "timestamp": "2026-09-14 15:43:26",
+      "is_executed": false,
+      "executed_at": null
+    }
+  ]
+}

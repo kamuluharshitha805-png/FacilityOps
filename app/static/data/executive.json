@@ -1,0 +1,71 @@
+{
+  "facility_health_score": 89.6,
+  "sub_scores": {
+    "energy": 88.5,
+    "maintenance": 91.2,
+    "occupancy": 84.5,
+    "security": 96.0,
+    "cost": 86.4,
+    "sustainability": 91.0
+  },
+  "major_risks": [
+    "Chiller 2 drive-end bearing vibration approaching critical trip threshold.",
+    "Upcoming afternoon peak-tariff window risk ($0.245/kWh demand surcharge)."
+  ],
+  "major_opportunities": [
+    "Dynamic VAV static pressure reset can reduce fan power by 24% ($860/mo).",
+    "On-demand setback in Floor 4 conference briefing room yields $1,450/mo savings."
+  ],
+  "active_alerts_count": 0,
+  "critical_alerts_count": 0,
+  "open_work_orders_count": 3,
+  "estimated_monthly_savings_usd": 26960.0,
+  "active_correlations": [
+    {
+      "id": "CORR-EN-MA-01",
+      "pair": "ENERGY \u2194 MAINTENANCE",
+      "agent_a": "Energy Intelligence Agent",
+      "agent_b": "Predictive Maintenance Agent",
+      "event_a": "Chiller 2 specific electrical draw rose by +18% (1.14 kW/ton vs 0.72 baseline).",
+      "event_b": "Chiller 2 drive-end bearing vibration RMS increased to 3.8 mm/s with 59.5\u00b0C thermal rise.",
+      "correlation_rule": "Correlated Mechanical Friction Loss & Power Spike Pattern",
+      "ai_reasoning": "Bearing raceway spalling is inducing mechanical rotational resistance, directly causing motor over-amperage and wasting 48 kW of electrical continuous load.",
+      "confidence_pct": 96.4,
+      "recommended_unified_action": "Dispatch expedited laser alignment and ultrasonic grease injection. Stage redundant Chiller 3.",
+      "financial_or_risk_impact": "Avoids $18,400 emergency motor replacement and eliminates $2,100/mo parasitic power burn.",
+      "timestamp": "2026-09-14 15:43:26",
+      "active": true
+    },
+    {
+      "id": "CORR-EN-OC-01",
+      "pair": "ENERGY \u2194 OCCUPANCY",
+      "agent_a": "Energy Intelligence Agent",
+      "agent_b": "Occupancy Intelligence Agent",
+      "event_a": "Floor 4 Executive Briefing Room VAV box cooling airflow at 100% capacity (42 kW load).",
+      "event_b": "PIR & optical sensors confirm 0 occupants present for past 180 continuous minutes.",
+      "correlation_rule": "Unoccupied Conditioned Space Energy Waste Rule",
+      "ai_reasoning": "Zone schedule in BMS did not clear after canceled calendar meeting, causing full-blast cooling and lighting in an empty 6,000 sq ft hall.",
+      "confidence_pct": 99.1,
+      "recommended_unified_action": "Execute automated thermal setback (21\u00b0C -> 24\u00b0C) and extinguish decorative downlights.",
+      "financial_or_risk_impact": "Immediately cuts 38 kW continuous waste, saving $1,450/month in operating costs.",
+      "timestamp": "2026-09-14 15:43:26",
+      "active": true
+    },
+    {
+      "id": "CORR-MA-CO-01",
+      "pair": "MAINTENANCE \u2194 COST",
+      "agent_a": "Predictive Maintenance Agent",
+      "agent_b": "Cost Optimization Agent",
+      "event_a": "Chiller 2 failure probability increased to 74% within 14-day window.",
+      "event_b": "Cost Agent evaluated emergency replacement quote ($185,000) vs planned overhaul ($8,400).",
+      "correlation_rule": "Lifecycle Failure Cost-Risk Optimization",
+      "ai_reasoning": "Running equipment to failure in peak season multiplies cost by 22x and causes severe tenant disruption. Planned intervention delivers 95.4% cost avoidance.",
+      "confidence_pct": 98.0,
+      "recommended_unified_action": "Approve preventative maintenance work order WO-2026-101 immediately during scheduled weekend downtime window.",
+      "financial_or_risk_impact": "Yields net capital risk avoidance of $176,600.",
+      "timestamp": "2026-09-14 15:43:26",
+      "active": true
+    }
+  ],
+  "last_sync": "15:43:27"
+}

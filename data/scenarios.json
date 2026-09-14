@@ -1,0 +1,64 @@
+{
+  "active_scenario": "scenario_reset_nominal",
+  "scenarios": [
+    {
+      "id": "scenario_chiller_overheat",
+      "title": "Chiller 2 Bearing Overheat & Vibration Surge",
+      "category": "Mechanical & Energy",
+      "severity": "Critical",
+      "description": "Simulates raceway spalling and mechanical friction in Centrifugal Chiller 2, causing severe vibration, motor amperage surge (+115 kW), and rapid health score collapse.",
+      "affected_asset": "CH-02",
+      "affected_zone": "Z-F5-03",
+      "expected_correlations": [
+        "ENERGY \u2194 MAINTENANCE",
+        "MAINTENANCE \u2194 COST"
+      ]
+    },
+    {
+      "id": "scenario_restricted_breach",
+      "title": "Data Center Unauthenticated Physical Intrusion",
+      "category": "Security & Occupancy",
+      "severity": "Critical",
+      "description": "Simulates physical motion and human presence in Mission Data Center (Z-F5-01) without any authorized electronic badge swipe registration.",
+      "affected_asset": "CRAC-01",
+      "affected_zone": "Z-F5-01",
+      "expected_correlations": [
+        "OCCUPANCY \u2194 SECURITY"
+      ]
+    },
+    {
+      "id": "scenario_water_leak",
+      "title": "Rooftop Cooling Tower Water Main Rupture / Micro-Leak",
+      "category": "Utilities & Waste",
+      "severity": "High",
+      "description": "Simulates hydraulic makeup water valve sticking wide open on Cooling Tower Deck (Z-F5-04), causing continuous 78 GPM water loss.",
+      "affected_asset": "MTR-WATER-ROOF",
+      "affected_zone": "Z-F5-04",
+      "expected_correlations": [
+        "ENERGY \u2194 COST"
+      ]
+    },
+    {
+      "id": "scenario_peak_demand_spike",
+      "title": "Peak Tariff Demand Surcharge Threat",
+      "category": "Energy & Cost",
+      "severity": "High",
+      "description": "Simulates concurrent chiller staging and full elevator traffic during the 14:00 peak utility tariff window, threatening a $5,400 demand charge penalty.",
+      "affected_asset": "MTR-ELEC-MAIN",
+      "affected_zone": "Z-F1-05",
+      "expected_correlations": [
+        "ENERGY \u2194 COST"
+      ]
+    },
+    {
+      "id": "scenario_reset_nominal",
+      "title": "Reset All Systems to Nominal Baseline",
+      "category": "System Control",
+      "severity": "Information",
+      "description": "Clears active fault injections, recalibrates sensor baselines, and restores optimal nominal operational conditions.",
+      "affected_asset": "ALL",
+      "affected_zone": "ALL",
+      "expected_correlations": []
+    }
+  ]
+}

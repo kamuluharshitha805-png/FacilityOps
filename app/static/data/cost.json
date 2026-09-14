@@ -1,0 +1,47 @@
+{
+  "kpis": {
+    "total_operating_cost": 6211.5,
+    "daily_energy_cost": 2780.0,
+    "daily_maintenance_cost": 620.0,
+    "daily_water_cost": 101.5,
+    "monthly_realized_savings": 14850.0,
+    "monthly_potential_savings": 28400.0,
+    "cost_efficiency_score": 86.4,
+    "sustainability_score": 91.0,
+    "resource_utilization_pct": 78.5,
+    "cost_distribution": {
+      "Energy & Electricity": 2780.0,
+      "Predictive & Planned Maintenance": 620.0,
+      "Municipal Water & Utilities": 101.5,
+      "Facility Operations & Staffing": 1450.0,
+      "Capital Asset Depreciation": 940.0,
+      "Consumables & Other": 320.0
+    },
+    "carbon_emissions_kg": 6486.7
+  },
+  "insights": [
+    {
+      "id": "INS-AGT-6587",
+      "title": "Transformer Redundancy Load-Balancing & Losses",
+      "agent_source": "Cost Optimization Agent",
+      "category": "Energy Cost",
+      "insight": "Main Step-Down Transformer XFMR-01 is operating at 82% rated capacity while redundant unit XFMR-02 operates at only 12% no-load standby.",
+      "why": "Unbalanced loading increases I\u00b2R copper core winding losses exponentially on XFMR-01 ($410/mo wasted heat dissipation).",
+      "risk": "Accelerates insulation thermal degradation, reducing transformer remaining life by an estimated 4.5 years.",
+      "recommendation": "Auto-transfer 35% of secondary feeder breakers to XFMR-02 to balance loads at 47% each, running at peak transformer efficiency curve.",
+      "impact": "Reduces parasitic electrical heat loss by 18,500 kWh/year, yielding $3,050/yr direct electricity cost savings.",
+      "priority": "Low",
+      "estimated_savings_usd": 3050.0,
+      "action_label": "Balance Transformer Feeder Load",
+      "action_type": "dispatch_maint",
+      "action_params": {
+        "source_xfmr": "XFMR-01",
+        "target_xfmr": "XFMR-02",
+        "transfer_pct": 35
+      },
+      "timestamp": "2026-09-14 15:43:26",
+      "is_executed": false,
+      "executed_at": null
+    }
+  ]
+}

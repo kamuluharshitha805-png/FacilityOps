@@ -1,0 +1,165 @@
+{
+  "kpis": {
+    "total_assets": 39,
+    "healthy_assets": 39,
+    "good_assets": 0,
+    "warning_assets": 0,
+    "critical_assets": 0,
+    "average_equipment_health": 91.2,
+    "prevented_failures": 14,
+    "open_work_orders": 3,
+    "completed_work_orders": 1,
+    "mtbf_hours": 4250.0,
+    "mttr_hours": 3.2,
+    "maintenance_cost_ytd": 48500.0,
+    "health_distribution": {
+      "healthy": 39,
+      "good": 0,
+      "warning": 0,
+      "critical": 0
+    },
+    "work_orders": [
+      {
+        "id": "WO-2026-101",
+        "asset_id": "PMP-03",
+        "asset_name": "Condenser Water Pump 1",
+        "location": "Floor 5 Mechanical Room (Z-F5-03)",
+        "title": "Seal Flush Inspection & Mechanical Coupling Realignment",
+        "priority": "Medium",
+        "status": "Assigned",
+        "assigned_to": "Hydronics Specialist - David Miller",
+        "team": "Mechanical",
+        "created_date": "2026-09-12",
+        "due_date": "2026-09-15",
+        "completed_date": null,
+        "estimated_hours": 3.5,
+        "actual_hours": null,
+        "estimated_cost_usd": 650.0,
+        "maintenance_action": "Laser shaft realignment and replace mechanical face seal cartridge.",
+        "ai_trigger_reason": "Vibration RMS elevated by 0.35 mm/s with 1X rotational frequency peak harmonics.",
+        "source_alert_id": null
+      },
+      {
+        "id": "WO-2026-102",
+        "asset_id": "AHU-F2-01",
+        "asset_name": "Floor 2 Labs Clean Supply AHU",
+        "location": "Floor 2 Cleanroom Plant (Z-F2-01)",
+        "title": "HEPA Filter Differential Pressure & Belt Tension Verification",
+        "priority": "High",
+        "status": "In Progress",
+        "assigned_to": "HVAC Controls Lead - Sarah Chen",
+        "team": "HVAC",
+        "created_date": "2026-09-13",
+        "due_date": "2026-09-14",
+        "completed_date": null,
+        "estimated_hours": 4.0,
+        "actual_hours": null,
+        "estimated_cost_usd": 1200.0,
+        "maintenance_action": "Inspect differential pressure transducer, replace pre-filters and verify belt tension.",
+        "ai_trigger_reason": "Filter delta-P increased to 1.4 in. w.g. Fan motor slip ratio increased by 6%.",
+        "source_alert_id": null
+      },
+      {
+        "id": "WO-2026-103",
+        "asset_id": "XFMR-01",
+        "asset_name": "Main Step-Down Transformer 2.5MVA",
+        "location": "Floor 1 Electrical Substation (Z-F1-05)",
+        "title": "Infrared Thermography Scan & Dielectric Oil Sampling",
+        "priority": "Low",
+        "status": "Completed",
+        "assigned_to": "High-Voltage Electrician - Carlos Gomez",
+        "team": "Electrical",
+        "created_date": "2026-09-06",
+        "due_date": "2026-09-10",
+        "completed_date": "2026-09-10",
+        "estimated_hours": 2.5,
+        "actual_hours": 2.0,
+        "estimated_cost_usd": 450.0,
+        "maintenance_action": "Completed 12-point thermographic scan of bushing lugs and tested breakdown voltage of transformer fluid.",
+        "ai_trigger_reason": "Scheduled 6-month condition-based preventive milestone.",
+        "source_alert_id": null
+      },
+      {
+        "id": "WO-2026-104",
+        "asset_id": "CRAC-02",
+        "asset_name": "Mission Data Center CRAC 2",
+        "location": "Floor 5 Data Center Alpha (Z-F5-01)",
+        "title": "Electronic Expansion Valve (EEV) & Superheat Calibration",
+        "priority": "Medium",
+        "status": "Open",
+        "assigned_to": "Thermal Specialist - Alex Wong",
+        "team": "HVAC",
+        "created_date": "2026-09-14",
+        "due_date": "2026-09-17",
+        "completed_date": null,
+        "estimated_hours": 3.0,
+        "actual_hours": null,
+        "estimated_cost_usd": 550.0,
+        "maintenance_action": "Recalibrate stepper motor EEV controller and verify compressor suction line superheat stability.",
+        "ai_trigger_reason": "Suction line temperature oscillation of +/- 4.2\u00b0C detected under constant compute rack heat load.",
+        "source_alert_id": null
+      }
+    ],
+    "calendar_events": [
+      {
+        "date": "2026-09-15",
+        "title": "PMP-03 Coupling Realignment",
+        "priority": "Medium",
+        "asset": "PMP-03",
+        "type": "Corrective"
+      },
+      {
+        "date": "2026-09-16",
+        "title": "ELV-01 Cable Tension & Brake Pad Inspection",
+        "priority": "Medium",
+        "asset": "ELV-01",
+        "type": "Scheduled"
+      },
+      {
+        "date": "2026-09-17",
+        "title": "CRAC-02 EEV Calibration",
+        "priority": "High",
+        "asset": "CRAC-02",
+        "type": "Predictive"
+      },
+      {
+        "date": "2026-09-19",
+        "title": "GEN-01 30-Min Full Load Transfer Test",
+        "priority": "Critical",
+        "asset": "GEN-01",
+        "type": "Compliance"
+      },
+      {
+        "date": "2026-09-21",
+        "title": "CT-01 & CT-02 Biocide Water Treatment Clean",
+        "priority": "Medium",
+        "asset": "CT-01",
+        "type": "Preventive"
+      }
+    ]
+  },
+  "insights": [
+    {
+      "id": "INS-AGT-6587",
+      "title": "Chiller 2 Compressor Drive-End Bearing Friction Warning",
+      "agent_source": "Predictive Maintenance Agent",
+      "category": "Mechanical Degradation",
+      "insight": "Centrifugal Chiller 2 (CH-02) drive-end bearing vibration RMS has trended upward from 1.4 mm/s to 3.8 mm/s over 72 hours, with temperature reaching 59.5\u00b0C.",
+      "why": "Fast Fourier Transform (FFT) vibration telemetry indicates peak amplitude at ball-pass inner ring frequency (BPFI), indicating raceway spalling.",
+      "risk": "Unmitigated operation will lead to catastrophic shaft seizure, unexpected chiller trip during peak heat hours, and emergency replacement costs exceeding $65,000.",
+      "recommendation": "Schedule ultrasonic grease injection and vibration spectrum re-scan within 48 hours; stage Chiller 3 (CH-03) to take base load.",
+      "impact": "Extends bearing life by ~6,000 run hours, prevents unexpected HVAC shutdown, and preserves $18,400 in emergency repair and business disruption costs.",
+      "priority": "Critical",
+      "estimated_savings_usd": 18400.0,
+      "action_label": "Dispatch Mechanical Overhaul",
+      "action_type": "dispatch_maint",
+      "action_params": {
+        "asset_id": "CH-02",
+        "task": "Bearing greasing & spectrum analysis"
+      },
+      "timestamp": "2026-09-14 15:43:26",
+      "is_executed": false,
+      "executed_at": null
+    }
+  ]
+}

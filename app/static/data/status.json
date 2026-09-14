@@ -1,0 +1,72 @@
+[
+  {
+    "id": "agt_energy_01",
+    "name": "Energy Intelligence Agent",
+    "role": "Autonomous Utility, HVAC & Carbon Optimization",
+    "status": "Active",
+    "health_rating": "Nominal",
+    "latency_ms": 1.2,
+    "telemetry_points_processed": 0,
+    "alerts_generated": 0,
+    "recommendations_generated": 2,
+    "active_insights_count": 2,
+    "last_reasoning_summary": "Initialized and awaiting telemetry stream.",
+    "last_updated": "15:43:27"
+  },
+  {
+    "id": "agt_maint_02",
+    "name": "Predictive Maintenance Agent",
+    "role": "Autonomous Asset Health, Degradation Modeling & Work Order Dispatch",
+    "status": "Active",
+    "health_rating": "Nominal",
+    "latency_ms": 1.2,
+    "telemetry_points_processed": 0,
+    "alerts_generated": 0,
+    "recommendations_generated": 1,
+    "active_insights_count": 1,
+    "last_reasoning_summary": "Initialized and awaiting telemetry stream.",
+    "last_updated": "15:43:27"
+  },
+  {
+    "id": "agt_occupancy_03",
+    "name": "Occupancy Intelligence Agent",
+    "role": "Autonomous Spatial Density, Space Utilization & Visitor Analytics",
+    "status": "Active",
+    "health_rating": "Nominal",
+    "latency_ms": 1.2,
+    "telemetry_points_processed": 0,
+    "alerts_generated": 0,
+    "recommendations_generated": 1,
+    "active_insights_count": 1,
+    "last_reasoning_summary": "Initialized and awaiting telemetry stream.",
+    "last_updated": "15:43:27"
+  },
+  {
+    "id": "agt_security_04",
+    "name": "Security Intelligence Agent",
+    "role": "Autonomous Access Perimeter, CCTV Analytics & Zone Intrusion Detection",
+    "status": "Active",
+    "health_rating": "Nominal",
+    "latency_ms": 1.2,
+    "telemetry_points_processed": 0,
+    "alerts_generated": 0,
+    "recommendations_generated": 1,
+    "active_insights_count": 1,
+    "last_reasoning_summary": "Initialized and awaiting telemetry stream.",
+    "last_updated": "15:43:27"
+  },
+  {
+    "id": "agt_cost_05",
+    "name": "Cost Optimization Agent",
+    "role": "Autonomous Financial Analytics, Tariff Optimization & ROI Modeling",
+    "status": "Active",
+    "health_rating": "Nominal",
+    "latency_ms": 1.2,
+    "telemetry_points_processed": 0,
+    "alerts_generated": 0,
+    "recommendations_generated": 1,
+    "active_insights_count": 1,
+    "last_reasoning_summary": "Initialized and awaiting telemetry stream.",
+    "last_updated": "15:43:27"
+  }
+]

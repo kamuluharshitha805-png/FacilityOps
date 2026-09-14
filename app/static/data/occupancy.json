@@ -1,0 +1,231 @@
+{
+  "kpis": {
+    "current_occupancy": 582,
+    "total_capacity": 1629,
+    "occupancy_rate": 35.7,
+    "peak_occupancy": 840,
+    "visitor_count": 48,
+    "active_zones_count": 21,
+    "space_utilization_score": 84.5,
+    "crowded_zones_count": 2,
+    "underutilized_zones_count": 2,
+    "zone_distribution": {
+      "crowded": 0,
+      "normal": 6,
+      "low": 18,
+      "empty": 0
+    },
+    "floor_breakdown": [
+      {
+        "floor": 1,
+        "occupancy": 182,
+        "capacity": 375,
+        "active_zones": 5,
+        "total_zones": 5,
+        "rate_pct": 48.5
+      },
+      {
+        "floor": 2,
+        "occupancy": 114,
+        "capacity": 272,
+        "active_zones": 4,
+        "total_zones": 4,
+        "rate_pct": 41.9
+      },
+      {
+        "floor": 3,
+        "occupancy": 270,
+        "capacity": 624,
+        "active_zones": 5,
+        "total_zones": 5,
+        "rate_pct": 43.3
+      },
+      {
+        "floor": 4,
+        "occupancy": 121,
+        "capacity": 295,
+        "active_zones": 5,
+        "total_zones": 5,
+        "rate_pct": 41.0
+      },
+      {
+        "floor": 5,
+        "occupancy": 14,
+        "capacity": 63,
+        "active_zones": 5,
+        "total_zones": 5,
+        "rate_pct": 22.2
+      }
+    ],
+    "hourly_profile": [
+      {
+        "time": "14:00",
+        "occupancy": 819,
+        "visitors": 46,
+        "utilization_pct": 50.3
+      },
+      {
+        "time": "15:00",
+        "occupancy": 733,
+        "visitors": 38,
+        "utilization_pct": 45.0
+      },
+      {
+        "time": "16:00",
+        "occupancy": 576,
+        "visitors": 25,
+        "utilization_pct": 35.4
+      },
+      {
+        "time": "17:00",
+        "occupancy": 434,
+        "visitors": 10,
+        "utilization_pct": 26.6
+      },
+      {
+        "time": "18:00",
+        "occupancy": 231,
+        "visitors": 0,
+        "utilization_pct": 14.2
+      },
+      {
+        "time": "19:00",
+        "occupancy": 18,
+        "visitors": 0,
+        "utilization_pct": 1.1
+      },
+      {
+        "time": "20:00",
+        "occupancy": 16,
+        "visitors": 0,
+        "utilization_pct": 1.0
+      },
+      {
+        "time": "21:00",
+        "occupancy": 21,
+        "visitors": 0,
+        "utilization_pct": 1.3
+      },
+      {
+        "time": "22:00",
+        "occupancy": 19,
+        "visitors": 0,
+        "utilization_pct": 1.2
+      },
+      {
+        "time": "23:00",
+        "occupancy": 18,
+        "visitors": 0,
+        "utilization_pct": 1.1
+      },
+      {
+        "time": "00:00",
+        "occupancy": 27,
+        "visitors": 0,
+        "utilization_pct": 1.7
+      },
+      {
+        "time": "01:00",
+        "occupancy": 19,
+        "visitors": 0,
+        "utilization_pct": 1.2
+      },
+      {
+        "time": "02:00",
+        "occupancy": 18,
+        "visitors": 0,
+        "utilization_pct": 1.1
+      },
+      {
+        "time": "03:00",
+        "occupancy": 28,
+        "visitors": 0,
+        "utilization_pct": 1.7
+      },
+      {
+        "time": "04:00",
+        "occupancy": 24,
+        "visitors": 0,
+        "utilization_pct": 1.5
+      },
+      {
+        "time": "05:00",
+        "occupancy": 19,
+        "visitors": 0,
+        "utilization_pct": 1.2
+      },
+      {
+        "time": "06:00",
+        "occupancy": 24,
+        "visitors": 0,
+        "utilization_pct": 1.5
+      },
+      {
+        "time": "07:00",
+        "occupancy": 17,
+        "visitors": 0,
+        "utilization_pct": 1.0
+      },
+      {
+        "time": "08:00",
+        "occupancy": 230,
+        "visitors": 10,
+        "utilization_pct": 14.1
+      },
+      {
+        "time": "09:00",
+        "occupancy": 420,
+        "visitors": 10,
+        "utilization_pct": 25.8
+      },
+      {
+        "time": "10:00",
+        "occupancy": 588,
+        "visitors": 25,
+        "utilization_pct": 36.1
+      },
+      {
+        "time": "11:00",
+        "occupancy": 733,
+        "visitors": 38,
+        "utilization_pct": 45.0
+      },
+      {
+        "time": "12:00",
+        "occupancy": 798,
+        "visitors": 46,
+        "utilization_pct": 49.0
+      },
+      {
+        "time": "13:00",
+        "occupancy": 820,
+        "visitors": 50,
+        "utilization_pct": 50.3
+      }
+    ]
+  },
+  "insights": [
+    {
+      "id": "INS-AGT-6587",
+      "title": "Floor 4 Conference & Briefing Room Underutilization",
+      "agent_source": "Occupancy Intelligence Agent",
+      "category": "Space Utilization",
+      "insight": "Global Strategy Briefing Room (Z-F4-03) has averaged only 8.5% weekly occupancy despite 6,000 sq ft dedicated footprint and continuous climate conditioning.",
+      "why": "Calendar bookings show 78% cancellation rate and shift to hybrid remote video meetings.",
+      "risk": "Unneeded lighting and dedicated HVAC continuous runtime costs $1,450/month in wasted operational energy.",
+      "recommendation": "Convert Z-F4-03 to an on-demand occupancy-triggered zone with automated setback mode when unbooked.",
+      "impact": "Reduces dedicated conditioning load by 65%, saving ~$1,450/month and reclaiming space for flexible agile pods.",
+      "priority": "Medium",
+      "estimated_savings_usd": 1450.0,
+      "action_label": "Implement On-Demand Zone Setback",
+      "action_type": "schedule_adjust",
+      "action_params": {
+        "zone_id": "Z-F4-03",
+        "setback_mode": "occupancy_triggered"
+      },
+      "timestamp": "2026-09-14 15:43:26",
+      "is_executed": false,
+      "executed_at": null
+    }
+  ]
+}
